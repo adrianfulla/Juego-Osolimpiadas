@@ -9,15 +9,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class PantallaInicio extends World
 {
 
-    /**
-     * Constructor for objects of class PantallaInicio.
-     * 
-     */
+    
+    
     public PantallaInicio()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(400, 600, 1); 
         prepare();
+        
     }
     
     /**

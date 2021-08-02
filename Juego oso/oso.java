@@ -82,7 +82,7 @@ public class oso extends Actor
     }
     public void arbolcolision()
     {
-        Actor a = getOneIntersectingObject(arbol.class);
+        Actor a = getOneIntersectingObject(arbolobstaculo.class);
         if (a != null)
         {
             setImage(estatico);

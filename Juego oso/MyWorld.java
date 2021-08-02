@@ -10,16 +10,14 @@ public class MyWorld extends World
 {
     puntaje puntos = new puntaje();
     
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+    GreenfootSound backgroundMusic = new GreenfootSound("bensound-erf.mp3");
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(400, 600, 1); 
-        setPaintOrder(Inicio.class, puntaje.class, copo.class, oso.class,moneda.class,arbol.class,piedra.class);
+        setPaintOrder(Inicio.class, puntaje.class, copo.class, oso.class,moneda.class,arbolobstaculo.class,piedra.class);
         prepare();
+        backgroundMusic.play();
     }
     
     public puntaje getPuntaje()
@@ -68,16 +66,16 @@ public class MyWorld extends World
         addObject(piedra,82,449);
         piedra piedra2 = new piedra();
         addObject(piedra2,322,198);
-        arbol arbol = new arbol();
-        addObject(arbol,208,304);
-        arbol arbol2 = new arbol();
-        addObject(arbol2,174,0);
-        arbol2.setLocation(172,28);
-        arbol.setLocation(171,226);
-        arbol2.setLocation(177,72);
-        arbol2.setLocation(187,29);
-        arbol2.setLocation(180,20);
-        arbol.setLocation(197,307);
+        arbolobstaculo arbolobstaculo = new arbolobstaculo();
+        addObject(arbolobstaculo,208,304);
+        arbolobstaculo arbolobstaculo2 = new arbolobstaculo();
+        addObject(arbolobstaculo2,174,0);
+        arbolobstaculo2.setLocation(172,28);
+        arbolobstaculo.setLocation(171,226);
+        arbolobstaculo2.setLocation(177,72);
+        arbolobstaculo2.setLocation(187,29);
+        arbolobstaculo2.setLocation(180,20);
+        arbolobstaculo.setLocation(197,307);
         Inicio inicio = new Inicio();
         addObject(inicio,197,307);
         objetivo objetivo = new objetivo();

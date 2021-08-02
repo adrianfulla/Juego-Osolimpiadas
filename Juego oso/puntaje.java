@@ -31,7 +31,7 @@ public class puntaje extends Actor
             if (cont > 0) { cont--;}
             else
             {
-            Greenfoot.setWorld(new PantallaVictoria());
+            Greenfoot.setWorld(new arborevento());
             }
         }
     }
